@@ -1,0 +1,132 @@
+.tab-content {
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #0e1726;
+  border-radius: 6px;
+}
+
+.crd {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: #060818;
+
+  &__icon {
+    margin-bottom: 15px;
+    width: 65px;
+    height: 65px;
+    background-color: #1b55e2;
+    color: #e0e6ed;
+    border-radius: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > i {
+      font-size: 30px;
+    }
+
+    &--recovered {
+      background-color: #009688;
+    }
+
+    &--danger {
+      background-color: #e7515a;
+    }
+
+    &--warning {
+      background-color: #e2a03f;
+    }
+  }
+
+  &-bd {
+
+    &__cnt,
+    &__tl {
+      margin: 0;
+    }
+
+
+    &__cnt {
+      margin-bottom: 0;
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      color: #e0e6ed;
+    }
+
+    &__tl {
+      margin-bottom: 0;
+      font-size: 15px;
+      color: #888ea8;
+    }
+  }
+
+  &--confirmed {
+    border-left: 3px solid #1b55e2;
+  }
+
+  &--recovered {
+    border-left: 3px solid #009688;
+  }
+
+  &--danger {
+    border-left: 3px solid #e7515a;
+  }
+
+  &--warning {
+    border-left: 3px solid #e2a03f;
+  }
+
+  &--today {
+    margin-top: 15px;
+    border-left: 3px solid #25d5e4;
+
+    & hr {
+      border-top: 1px solid #25d5e4;
+    }
+  }
+
+  &--no-mb {
+    margin-bottom: 0;
+
+  }
+}
+
+
+.today {
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #060818;
+
+  &-number {
+    text-align: center;
+    border-right: 1px dashed #3b3f5c;
+    border-left: 1px dashed #3b3f5c;
+
+    &__cases {
+      margin: 0 auto 20px;
+      font-size: 30px;
+      color: #25d5e4;
+      background: #060818;
+      font-weight: 600;
+      border-radius: 50%;
+      height: 90px;
+      width: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 5px solid #191e3a;
+      box-shadow: 0px 0px 8px 2px rgba(172, 176, 195, 0.23921568627450981);
+    }
+
+    &__tl {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: #25d5e4;
+    }
+  }
+  
+}

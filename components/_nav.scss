@@ -1,0 +1,51 @@
+// overrriding the boostrap styles with the custom scss for the sidebar
+.nav {
+  padding: 10px;
+  border-right: 1px solid #0e1726;
+
+  .nav-item {
+    margin: 5px 0;
+  }
+
+  .nav-link {
+    border: none;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    border-radius: 6px;
+    color: #fafafa;
+    transition: ease-in .3s;
+
+    &:hover {
+      background: #3b3f5c;
+      color: #e0e6ed;
+      box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    }
+
+    &.active {
+      color: #fafafa;
+      background: rgba(96, 125, 139, 0.54);
+    }
+  }
+}
+
+#sidebarMenu {
+  height: calc(100vh - 54px - 56px);
+  overflow-y: scroll;
+
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-right: 1px solid #0e1726;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #009688; 
+}
